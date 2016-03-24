@@ -26,7 +26,6 @@ def constructor(country, povline, proportion=True):
         values = [x.strip("'") for x in xx]
         d = dict(zip(header, values))
         try:
-            print d
             pop = int(float(d["ReqYearPopulation"])*1000000)
             res += [{
                 "year": int(d["RequestYear"]),
@@ -34,8 +33,7 @@ def constructor(country, povline, proportion=True):
                 "impoverished": int(pop*float(d["HeadCount"]))
             }]
 
-        except Exception, e:
-            print e
+        except Exception:
             pass
 
     return dict(
