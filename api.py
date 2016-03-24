@@ -1,6 +1,6 @@
 import json
-import povcal
 import webapp2
+from modules import povcal
 
 
 class PovcalHandler(webapp2.RequestHandler):
