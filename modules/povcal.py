@@ -4,6 +4,7 @@ from google.appengine.api import urlfetch
 
 
 def constructor(country, povline, proportion=True):
+    # Scrape and restructure Povcal website
 
     base = "http://iresearch.worldbank.org/PovcalNet/PovcalNetAPI.ashx"
     yearlist = ','.join([str(x) for x in np.arange(1970, 2018)])
