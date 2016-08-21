@@ -31,11 +31,11 @@ def constructor(country, povline, proportion=True):
         values = [x.strip("'") for x in xx]
         d = dict(zip(header, values))
         try:
-            pop = int(float(d["ReqYearPopulation"])*1000000)
+            pop = int(float(d["ReqYearPopulation"]) * 1000000)
             res += [{
                 "year": int(d["RequestYear"]),
                 "population": pop,
-                "impoverished": int(pop*float(d["HeadCount"]))
+                "impoverished": int(pop * float(d["HeadCount"]))
             }]
         except Exception:
             pass
