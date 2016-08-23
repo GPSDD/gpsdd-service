@@ -3,6 +3,7 @@ This project is meant to serve as the coorindating layer for data across the GPS
 The documentation for each endpoint is in the [Wiki](https://github.com/GPSDD/gpsdd-service/wiki).  A current list of available resources is compiled here:
 
 1. [PovcalNet](https://github.com/GPSDD/gpsdd-service/wiki/PovcalNet)
+2. [Forest Clearing Alerts](https://github.com/GPSDD/gpsdd-service/wiki/Forest-Clearing-Alerts)
 
 ### Developing
 

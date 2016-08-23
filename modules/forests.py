@@ -23,3 +23,4 @@ def constructor(country, begin, end):
         meta=data['meta'],
         download_url=data['download_urls']['csv']
     )
+    
